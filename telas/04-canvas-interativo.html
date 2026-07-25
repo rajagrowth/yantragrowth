@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Canvas Interativo · Yantra Growth OS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #F7F3EA; }
+  a { color: #B8862E; }
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-thumb { background: #C9BFA0; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div style="display:flex;height:100vh;font-family:'Inter',sans-serif;color:#16213E;background:#F7F3EA;overflow:hidden;">
+
+  <aside style="width:248px;flex-shrink:0;background:#16213E;display:flex;flex-direction:column;padding:24px 0;">
+    <div style="display:flex;align-items:center;gap:10px;padding:0 20px 20px;border-bottom:1px solid #26325A;">
+      <svg width="28" height="28" viewBox="0 0 200 200">
+        <circle cx="100" cy="100" r="82" fill="none" stroke="#B8862E" stroke-width="2" opacity="0.55"/>
+        <circle cx="100" cy="100" r="34" fill="none" stroke="#B8862E" stroke-width="2" opacity="0.85"/>
+        <line x1="134" y1="100" x2="182" y2="100" stroke="#B8862E" stroke-width="9"/>
+        <line x1="117" y1="129.4" x2="141" y2="171" stroke="#B8862E" stroke-width="5"/>
+        <line x1="83" y1="129.4" x2="59" y2="171" stroke="#B8862E" stroke-width="9"/>
+        <line x1="66" y1="100" x2="18" y2="100" stroke="#B8862E" stroke-width="5"/>
+        <line x1="83" y1="70.6" x2="59" y2="29" stroke="#B8862E" stroke-width="9"/>
+        <line x1="117" y1="70.6" x2="141" y2="29" stroke="#B8862E" stroke-width="5"/>
+        <circle cx="100" cy="100" r="18" fill="#B8862E"/>
+      </svg>
+      <div style="font-family:'Fraunces',serif;font-weight:600;font-size:16px;color:#F7F3EA;line-height:1.2;">Yantra<br/>Growth OS</div>
+    </div>
+    <div style="padding:16px 20px;border-bottom:1px solid #26325A;">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#8892A6;margin-bottom:6px;">Cliente ativo</div>
+      <div style="background:#1E2A4D;border:1px solid #33406B;border-radius:4px;padding:10px 12px;display:flex;align-items:center;justify-content:space-between;">
+        <span style="font-size:13px;color:#F7F3EA;font-weight:500;">Empresa Atlas Ltda.</span>
+        <span style="color:#8892A6;font-size:11px;">▾</span>
+      </div>
+    </div>
+    <nav style="flex:1;overflow-y:auto;padding:16px 12px;"><div style="margin-bottom:18px;"><div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#57628A;padding:0 8px 8px;">Fundação</div><a href="./01-painel-principal.html" style="background:transparent;color:#9AA3BD;padding:9px 12px;border-radius:4px;font-size:13px;margin-bottom:2px;text-decoration:none;display:block;">Painel Principal</a><a href="./02-sobre-a-empresa.html" style="background:transparent;color:#9AA3BD;padding:9px 12px;border-radius:4px;font-size:13px;margin-bottom:2px;text-decoration:none;display:block;">Sobre a Empresa</a></div><div style="margin-bottom:18px;"><div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#57628A;padding:0 8px 8px;">Diagnóstico</div><a href="./03-publico-alvo-icp.html" style="background:transparent;color:#9AA3BD;padding:9px 12px;border-radius:4px;font-size:13px;margin-bottom:2px;text-decoration:none;display:block;">Público-Alvo (ICP)</a><a href="./04-canvas-interativo.html" style="background:#1E2A4D;color:#F7F3EA;padding:9px 12px;border-radius:4px;font-size:13px;margin-bottom:2px;text-decoration:none;display:block;">Canvas Interativo</a><a href="./05-canvas-bmc.html" style="background:transparent;color:#9AA3BD;padding:9px 12px;border-radius:4px;font-size:13px;margin-bottom:2px;text-decoration:none;display:block;">Canvas BMC</a><a href="./06-questionario-digital.html" style="background:transparent;color:#9AA3BD;padding:9px 12px;border-radius:4px;font-size:13px;margin-bottom:2px;text-decoration:none;display:block;">Questionário Digital</a><a href="./07-matriz-swot.html" style="background:transparent;color:#9AA3BD;padding:9px 12px;border-radius:4px;font-size:13px;margin-bottom:2px;text-decoration:none;display:block;">Matriz SWOT</a><a href="./08-matriz-gut.html" style="background:transparent;color:#9AA3BD;padding:9px 12px;border-radius:4px;font-size:13px;margin-bottom:2px;text-decoration:none;display:block;">Matriz GUT</a><a href="./09-funil-de-vendas.html" style="background:transparent;color:#9AA3BD;padding:9px 12px;border-radius:4px;font-size:13px;margin-bottom:2px;text-decoration:none;display:block;">Funil de Vendas</a><a href="./10-diagnostico-score.html" style="background:transparent;color:#9AA3BD;padding:9px 12px;border-radius:4px;font-size:13px;margin-bottom:2px;text-decoration:none;display:block;">Diagnóstico & Score</a></div><div style="margin-bottom:18px;"><div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#57628A;padding:0 8px 8px;">Estratégia</div><a href="./11-posicionamento-oferta.html" style="background:transparent;color:#9AA3BD;padding:9px 12px;border-radius:4px;font-size:13px;margin-bottom:2px;text-decoration:none;display:block;">Posicionamento & Oferta</a></div><div style="margin-bottom:18px;"><div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#57628A;padding:0 8px 8px;">Growth</div><a href="./12-okr-yantra.html" style="background:transparent;color:#9AA3BD;padding:9px 12px;border-radius:4px;font-size:13px;margin-bottom:2px;text-decoration:none;display:block;">OKR Yantra</a><a href="./13-roadmap-kanban.html" style="background:transparent;color:#9AA3BD;padding:9px 12px;border-radius:4px;font-size:13px;margin-bottom:2px;text-decoration:none;display:block;">Roadmap (Kanban)</a><a href="./14-fca.html" style="background:transparent;color:#9AA3BD;padding:9px 12px;border-radius:4px;font-size:13px;margin-bottom:2px;text-decoration:none;display:block;">FCA</a><a href="./15-pdi.html" style="background:transparent;color:#9AA3BD;padding:9px 12px;border-radius:4px;font-size:13px;margin-bottom:2px;text-decoration:none;display:block;">PDI</a></div><div style="margin-bottom:18px;"><div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#57628A;padding:0 8px 8px;">Inteligência</div><a href="./16-gestao-consultoria.html" style="background:transparent;color:#9AA3BD;padding:9px 12px;border-radius:4px;font-size:13px;margin-bottom:2px;text-decoration:none;display:block;">Gestão da Consultoria</a></div><div style="margin-bottom:18px;"><div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#57628A;padding:0 8px 8px;">Certificação</div><a href="./17-certificacao.html" style="background:transparent;color:#9AA3BD;padding:9px 12px;border-radius:4px;font-size:13px;margin-bottom:2px;text-decoration:none;display:block;">Certificação</a></div></nav>
+  </aside>
+<main style="flex:1;overflow-y:auto;">
+
+<div style="padding:40px;display:flex;gap:24px;">
+<div style="flex:1;">
+<div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#8C5A2B;margin-bottom:6px;">Diagnóstico</div>
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:28px;">
+  <h1 style="font-family:'Fraunces',serif;font-weight:600;font-size:32px;margin:0;">Canvas Interativo</h1>
+  <div style="background:#B8862E;color:#16213E;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;padding:10px 18px;border-radius:4px;">Gerar Diagnóstico</div>
+</div>
+<div style="position:relative;width:700px;height:560px;max-width:100%;margin:0 auto;background:#fff;border:1px solid #E4DCC8;border-radius:6px;overflow:auto;">
+  <div style="position:absolute;top:280px;left:350px;transform:translate(-50%,-50%);width:150px;height:150px;border-radius:50%;background:#16213E;display:flex;align-items:center;justify-content:center;text-align:center;padding:14px;z-index:2;">
+    <div><div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#B8862E;letter-spacing:0.1em;">BINDU</div>
+    <div style="font-family:'Fraunces',serif;font-weight:600;font-size:13px;color:#F7F3EA;margin-top:5px;">Ser referência regional em 3 anos</div></div>
+  </div>
+  
+  <div style="position:absolute;top:55px;left:350px;transform:translate(-50%,-50%);width:150px;background:#fff;border:2px solid #2F5D62;border-radius:6px;padding:10px 12px;z-index:1;">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#2F5D62;letter-spacing:0.06em;margin-bottom:4px;">Clareza</div>
+    <div style="font-size:11px;color:#16213E;line-height:1.35;">Notas do diagnóstico para este pilar.</div>
+  </div>
+  <div style="position:absolute;top:168px;left:545px;transform:translate(-50%,-50%);width:150px;background:#fff;border:2px solid #3E7A6F;border-radius:6px;padding:10px 12px;z-index:1;">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#3E7A6F;letter-spacing:0.06em;margin-bottom:4px;">Direção</div>
+    <div style="font-size:11px;color:#16213E;line-height:1.35;">Notas do diagnóstico para este pilar.</div>
+  </div>
+  <div style="position:absolute;top:393px;left:545px;transform:translate(-50%,-50%);width:150px;background:#fff;border:2px solid #6B8F63;border-radius:6px;padding:10px 12px;z-index:1;">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#6B8F63;letter-spacing:0.06em;margin-bottom:4px;">Aquisição</div>
+    <div style="font-size:11px;color:#16213E;line-height:1.35;">Notas do diagnóstico para este pilar.</div>
+  </div>
+  <div style="position:absolute;top:505px;left:350px;transform:translate(-50%,-50%);width:150px;background:#fff;border:2px solid #A08A3C;border-radius:6px;padding:10px 12px;z-index:1;">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#A08A3C;letter-spacing:0.06em;margin-bottom:4px;">Conversão</div>
+    <div style="font-size:11px;color:#16213E;line-height:1.35;">Notas do diagnóstico para este pilar.</div>
+  </div>
+  <div style="position:absolute;top:393px;left:155px;transform:translate(-50%,-50%);width:150px;background:#fff;border:2px solid #B8862E;border-radius:6px;padding:10px 12px;z-index:1;">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#B8862E;letter-spacing:0.06em;margin-bottom:4px;">Escala</div>
+    <div style="font-size:11px;color:#16213E;line-height:1.35;">Notas do diagnóstico para este pilar.</div>
+  </div>
+  <div style="position:absolute;top:167px;left:155px;transform:translate(-50%,-50%);width:150px;background:#fff;border:2px solid #8C5A2B;border-radius:6px;padding:10px 12px;z-index:1;">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#8C5A2B;letter-spacing:0.06em;margin-bottom:4px;">Evolução</div>
+    <div style="font-size:11px;color:#16213E;line-height:1.35;">Notas do diagnóstico para este pilar.</div>
+  </div>
+</div>
+</div>
+<div style="width:280px;background:#fff;border:1px solid #E4DCC8;border-radius:6px;padding:20px;">
+  <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#8C5A2B;margin-bottom:12px;">Sugestões de IA</div>
+  <div style="font-size:13px;line-height:1.6;color:#2A2F45;background:#F7F3EA;border-radius:4px;padding:12px;margin-bottom:10px;">Conversão parece dependente de indicação — considere formalizar um funil de vendas com etapas mensuráveis.</div>
+  <div style="font-size:13px;line-height:1.6;color:#2A2F45;background:#F7F3EA;border-radius:4px;padding:12px;">Escala ainda não tem processo documentado para novas contratações.</div>
+</div>
+</div>
+</main>
+</div>
+</body>
+</html>

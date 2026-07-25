@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="./doc-page.js"></script>
+<style>
+  * { box-sizing: border-box; }
+  a { color: #B8862E; }
+  a:hover { color: #8C5A2B; }
+  h1, h2, h3 { font-family: 'Fraunces', serif; color: #16213E; }
+  h1 { font-size: 30px; font-weight: 600; }
+  h2 { font-size: 20px; font-weight: 600; margin-top: 32px; }
+  body { font-family: 'Inter', sans-serif; color: #16213E; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #E4DCC8; }
+  th { font-family: 'JetBrains Mono', monospace; font-size: 11px; text-transform: uppercase; color: #8C5A2B; }
+  .swatch { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: middle; }
+</style>
+</helmet>
+
+<doc-page margin="0.85in">
+  <div class="mono" style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #8C5A2B;">Yantra Growth OS</div>
+  <h1 style="margin: 4px 0 24px;">Análise do Sistema — Design</h1>
+
+  <p>Documento de referência técnica cobrindo a identidade visual e o protótipo de UI construídos para o Yantra Growth OS, para uso do time de desenvolvimento.</p>
+
+  <h2>1. Escopo entregue</h2>
+  <table>
+    <thead><tr><th>Arquivo</th><th>Conteúdo</th></tr></thead>
+    <tbody>
+      <tr><td>Yantra Growth OS - Manual de Marca.dc.html</td><td>Conceito do símbolo, 3 explorações, logo horizontal/vertical, ícone isolado, monocromático, regras de uso, paleta, tipografia, aplicações</td></tr>
+      <tr><td>Yantra Growth OS - Telas.dc.html</td><td>Protótipo navegável com 17 telas nos 6 módulos do produto</td></tr>
+    </tbody>
+  </table>
+
+  <h2>2. Arquitetura de navegação</h2>
+  <p>Nav lateral fixa, ordem imutável entre telas: <strong>Fundação → Diagnóstico → Estratégia → Growth → Inteligência → Certificação</strong>, com seletor de empresa/cliente no topo.</p>
+  <table>
+    <thead><tr><th>#</th><th>Módulo</th><th>Tela</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Fundação</td><td>Painel Principal (Dashboard)</td></tr>
+      <tr><td>2</td><td>Fundação</td><td>Sobre a Empresa</td></tr>
+      <tr><td>3</td><td>Diagnóstico</td><td>Público-Alvo (ICP)</td></tr>
+      <tr><td>4</td><td>Diagnóstico</td><td>Canvas Interativo</td></tr>
+      <tr><td>5</td><td>Diagnóstico</td><td>Canvas BMC</td></tr>
+      <tr><td>6</td><td>Diagnóstico</td><td>Questionário Digital</td></tr>
+      <tr><td>7</td><td>Diagnóstico</td><td>Matriz SWOT</td></tr>
+      <tr><td>8</td><td>Diagnóstico</td><td>Matriz GUT</td></tr>
+      <tr><td>9</td><td>Diagnóstico</td><td>Funil de Vendas &amp; Canais</td></tr>
+      <tr><td>10</td><td>Diagnóstico</td><td>Diagnóstico &amp; Score</td></tr>
+      <tr><td>11</td><td>Estratégia</td><td>Posicionamento &amp; Matriz de Oferta</td></tr>
+      <tr><td>12</td><td>Growth</td><td>OKR Yantra</td></tr>
+      <tr><td>13</td><td>Growth</td><td>Roadmap / Plano de Ação (Kanban)</td></tr>
+      <tr><td>14</td><td>Growth</td><td>Acompanhamento — FCA</td></tr>
+      <tr><td>15</td><td>Growth</td><td>Acompanhamento — PDI</td></tr>
+      <tr><td>16</td><td>Inteligência</td><td>Gestão da Consultoria</td></tr>
+      <tr><td>17</td><td>Certificação</td><td>Certificação</td></tr>
+    </tbody>
+  </table>
+
+  <h2>3. Paleta de cores</h2>
+  <table>
+    <thead><tr><th>Uso</th><th>Nome</th><th>Hex</th></tr></thead>
+    <tbody>
+      <tr><td>Marca</td><td><span class="swatch" style="background:#16213E"></span>Navy</td><td class="mono">#16213E</td></tr>
+      <tr><td>Marca</td><td><span class="swatch" style="background:#B8862E"></span>Dourado</td><td class="mono">#B8862E</td></tr>
+      <tr><td>Marca</td><td><span class="swatch" style="background:#F7F3EA;border:1px solid #ddd"></span>Papel</td><td class="mono">#F7F3EA</td></tr>
+      <tr><td>Pilar</td><td><span class="swatch" style="background:#2F5D62"></span>Clareza</td><td class="mono">#2F5D62</td></tr>
+      <tr><td>Pilar</td><td><span class="swatch" style="background:#3E7A6F"></span>Direção</td><td class="mono">#3E7A6F</td></tr>
+      <tr><td>Pilar</td><td><span class="swatch" style="background:#6B8F63"></span>Aquisição</td><td class="mono">#6B8F63</td></tr>
+      <tr><td>Pilar</td><td><span class="swatch" style="background:#A08A3C"></span>Conversão</td><td class="mono">#A08A3C</td></tr>
+      <tr><td>Pilar</td><td><span class="swatch" style="background:#B8862E"></span>Escala</td><td class="mono">#B8862E</td></tr>
+      <tr><td>Pilar</td><td><span class="swatch" style="background:#8C5A2B"></span>Evolução</td><td class="mono">#8C5A2B</td></tr>
+    </tbody>
+  </table>
+
+  <h2>4. Tipografia</h2>
+  <table>
+    <thead><tr><th>Papel</th><th>Fonte</th><th>Peso</th></tr></thead>
+    <tbody>
+      <tr><td>Títulos</td><td>Fraunces</td><td>500–700</td></tr>
+      <tr><td>UI / texto corrido</td><td>Inter</td><td>400–600</td></tr>
+      <tr><td>Dados / labels técnicos</td><td>JetBrains Mono</td><td>400–700</td></tr>
+    </tbody>
+  </table>
+
+  <h2>5. Componentes reutilizáveis identificados</h2>
+  <p>Padrão consistente entre as 17 telas — implementar como componentes compartilhados no código:</p>
+  <ul>
+    <li><strong>Card base</strong>: fundo branco, borda 1px #E4DCC8, radius 6px, padding 20–28px.</li>
+    <li><strong>Barra de progresso/score</strong>: trilho #EFE7D6 8–10px, preenchimento na cor do pilar ou dourado.</li>
+    <li><strong>Badge de status</strong>: fundo tonal + texto escuro correspondente, mono 11px, radius 3–4px.</li>
+    <li><strong>Badge de pilar</strong>: pill sólida na cor do pilar, texto branco, mono 10–11px.</li>
+    <li><strong>Tabela</strong>: header mono uppercase 11px sobre #F7F3EA, linhas com borda inferior #F0EAD9.</li>
+    <li><strong>Kanban card</strong>: borda esquerda de 4px na cor do pilar de origem.</li>
+  </ul>
+
+  <h2>6. Dados de exemplo (mock) usados no protótipo</h2>
+  <p>Todas as telas usam dados fictícios de uma empresa exemplo ("Empresa Atlas Ltda.") para ilustrar estados preenchidos — nenhum dado real de cliente. Substituir por integração com o backend do sistema.</p>
+
+  <h2>7. Próximos passos sugeridos</h2>
+  <ul>
+    <li>Validar states vazios/erro para cada tela (ainda não desenhados).</li>
+    <li>Especificar breakpoints responsivos (protótipo atual é desktop-first).</li>
+    <li>Detalhar microinterações (hover, drag-and-drop no Kanban, edição inline no Canvas/BMC).</li>
+  </ul>
+</doc-page>
+
+</x-dc>
+</body>
+</html>
